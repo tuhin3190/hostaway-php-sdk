@@ -20,7 +20,7 @@ A modern PHP SDK for the [Hostaway API](https://api.hostaway.com/documentation),
 Install the package via Composer:
 
 ```bash
-composer require rana-tuhin/hostaway-client-sdk
+composer require rana-tuhin/hostaway-php-sdk
 ```
 
 ---
