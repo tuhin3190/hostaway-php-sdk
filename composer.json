@@ -1,49 +1,50 @@
 {
-     "name": "rana-tuhin/hostaway-php-sdk",
-     "description": "A fully-featured PHP SDK for the Hostaway API with all available endpoints and resources.",
-     "type": "library",
-     "license": "MIT",
-     "authors": [
-          {
-               "name": "Rana Tuhin",
-               "email": "aimlesstuhin@gmail.com"
-          }
-     ],
-     "require": {
-          "php": ">=8.0",
-          "guzzlehttp/guzzle": "^7.0",
-          "ext-json": "*"
-     },
-     "autoload": {
-          "psr-4": {
-               "RanaTuhin\\Hostaway\\": "src/"
-          }
-     },
-     "extra": {
-          "laravel": {
-               "providers": [
-                    "RanaTuhin\\Hostaway\\HostawayServiceProvider"
-               ],
-               "aliases": {
-                    "Hostaway": "RanaTuhin\\Hostaway\\Facades\\Hostaway"
-               }
-          }
-     },
-     "require-dev": {
-          "pestphp/pest": "^4.0",
-          "phpstan/phpstan": "^1.0",
-          "friendsofphp/php-cs-fixer": "^3.0"
-     },
-     "scripts": {
-          "test": "phpunit",
-          "lint": "phpstan analyse src --level=max",
-          "fix": "php-cs-fixer fix src"
-     },
-     "minimum-stability": "stable",
-     "prefer-stable": true,
-     "config": {
-          "allow-plugins": {
-               "pestphp/pest-plugin": true
-          }
-     }
+  "name": "rana-tuhin/hostaway-php-sdk",
+  "description": "A fully-featured PHP SDK for the Hostaway API with all available endpoints and resources.",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Rana Tuhin",
+      "email": "aimlesstuhin@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=8.0",
+    "guzzlehttp/guzzle": "^7.0",
+    "ext-json": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "RanaTuhin\\Hostaway\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "RanaTuhin\\Hostaway\\HostawayServiceProvider"
+      ],
+      "aliases": {
+        "Hostaway": "RanaTuhin\\Hostaway\\Facades\\Hostaway"
+      }
+    }
+  },
+  "require-dev": {
+    "pestphp/pest": "^4.0",
+    "phpstan/phpstan": "^1.0",
+    "friendsofphp/php-cs-fixer": "^3.0"
+  },
+  "scripts": {
+    "test": "pest",
+    "lint": "phpstan analyse src --level=max",
+    "fix": "php-cs-fixer fix src"
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true,
+  "config": {
+    "allow-plugins": {
+      "pestphp/pest-plugin": true
+    },
+    "sort-packages": true
+  }
 }
