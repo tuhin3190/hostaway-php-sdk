@@ -39,7 +39,7 @@
     "lint": "phpstan analyse src --level=max",
     "fix": "php-cs-fixer fix src"
   },
-  "minimum-stability": "stable",
+  "minimum-stability": "dev",
   "prefer-stable": true,
   "config": {
     "allow-plugins": {
